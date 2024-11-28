@@ -12,7 +12,7 @@ export const createServer = (): Express => {
     .use(json())
     .use(cors())
     .get("/message/:name", (req, res) => {
-      return res.json({ message: `hello ${req.params.name}` });
+      return res.json({ message: `hello wowow ${req.params.name}` });
     })
     .get("/status", (_, res) => {
       return res.json({ ok: true });
